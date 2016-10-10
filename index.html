@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="css/style.css"/>
+	
+</head>
+<body>
+       <div class="upload-button"><div class="centered"><span class="upload-icon"></span><span>Upload Photo</span></div></div>
+       <div class="crop-button"><span class="upload-icon"></span><span>Crop Photo</span></div>
+ 
+        <form method="post" accept-charset="utf-8" name="form1">
+            <input name="hidden_data" id='hidden_data' type="hidden"/>
+        </form>
+   
+    <input type="file" id="imgLoader" />
+    <canvas id="canvas" width="260" height="267"></canvas>
+	
+	<figure>
+      <canvas id="gif-canvas"></canvas>
+      <figcaption>canvas to capture animation</figcaption>
+    </figure>
+    <figure>
+      <img id="gif-image" />
+      <figcaption>complete animation</figcaption>
+    </figure>
+   
+	
+    <script type="text/javascript" src="scripts/fabric.min.js"></script>   
+	<script src="scripts/LZWEncoder.js"></script>
+    <script src="scripts/NeuQuant.js"></script>
+    <script src="scripts/GIFEncoder.js"></script>
+	<script src="scripts/b64.js"></script>
+	<script type='text/javascript' src='scripts/gif.js'></script>
+	 <script type="text/javascript" src="scripts/upload.js"></script>
+	<script type='text/javascript' src='scripts/main.js'></script>
+</body>
+</html>

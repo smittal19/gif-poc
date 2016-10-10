@@ -1,0 +1,65 @@
+        #canvas{
+           
+			float:left;
+        }
+        
+        .upload-button, .crop-button{
+            border:1px solid #ccc;
+            background-color:#fff;
+            width:259px;
+            height:55px;
+            line-height:55px;
+            color: #999;
+            text-align: center;
+            cursor: pointer;
+			float:left;
+			margin-left:100px;
+        }
+        .canvas-container{
+			float:left;
+			margin-left:100px;
+		}
+        .upload-button:active,.crop-button:active{
+            border:1px solid #000;
+            background-color:#ccc;
+            color: #fff;
+        }
+        
+        #imgLoader{
+            display: none;
+        }
+        
+        .upload-icon{
+            background-image: url('../images/upload-icon.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width:10%;
+            height: 25px;
+        }
+        
+        .centered{
+            margin:0 auto;
+        }
+        
+        .centered span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+		
+		figure {
+			width: auto;
+			height: auto;
+			text-align: center;
+			float: left;
+		  }
+		  img {
+			width: auto;
+			height: auto;
+		  }
+		  textarea {
+			clear: left;
+			width: 100%;
+			height: 50%;
+		  }
+		  .upload-demo.ready #upload-demo{width:200px;height:200px;padding:0;margin-right:10px;}
+		 

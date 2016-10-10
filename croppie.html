@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Croppie - a simple javascript image cropper</title>
+    <link rel="Stylesheet" type="text/css" href="css/prism.css" />
+	<link rel="Stylesheet" type="text/css" href="http://foliotek.github.io/Croppie/bower_components/sweetalert/dist/sweetalert.css" />
+	<link rel="Stylesheet" type="text/css" href="css/croppie.css" />
+	<link rel="Stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+	
+</head>
+<body>
+	<div class="demo-wrap upload-demo">
+		<div class="container">
+		<div class="grid">
+			<div class="col-1-2">
+				<div class="actions">
+					<a class="btn file-btn">
+						<span>Upload</span>
+						<input type="file" id="upload" value="Choose a file" accept="image/*" />
+					</a>
+					<button class="upload-result">Result</button>
+				</div>
+			</div>
+			<div class="col-1-2">
+				<div class="upload-msg">
+					Upload a file to start cropping
+				</div>
+				<div id="upload-demo"></div>
+				 <input type="file" id="imgLoader" />
+    <canvas id="canvas" width="100" height="100"></canvas>
+			</div>
+		</div>
+		<form method="post" accept-charset="utf-8" name="form1">
+            <input name="hidden_data" id='hidden_data' type="hidden"/>
+        </form>
+   
+   
+		</div>
+	</div>
+
+	
+     <figure>
+      <canvas id="gif-canvas"></canvas>
+      <figcaption>canvas to capture animation</figcaption>
+    </figure>
+    <figure>
+      <img id="gif-image" />
+      <figcaption>complete animation</figcaption>
+    </figure>
+   
+	
+   </script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>   
+	<script src="scripts/LZWEncoder.js"></script>
+    <script src="scripts/NeuQuant.js"></script>
+    <script src="scripts/GIFEncoder.js"></script>
+	<script src="scripts/b64.js"></script>
+	<script type='text/javascript' src='scripts/gif.js'></script>
+	<script src="scripts/prism.js"></script>
+	<script type="text/javascript" src="http://foliotek.github.io/Croppie/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" src="http://foliotek.github.io/Croppie/bower_components/exif-js/exif.js"></script>
+	<script src="scripts/croppie.min.js"></script>
+	<script src="scripts/demo.js"></script>
+	<script>
+            Demo.init();
+    </script>
+	
+	<script type='text/javascript' src='scripts/main.js'></script>
+</body>
+</html>
